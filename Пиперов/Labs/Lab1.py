@@ -14,6 +14,9 @@ def is_last_equal(first_list: list[int], second_list: list[int]):
 result = False
 while not result:
     length_of_list = int(input("Введите длину списка: "))
+    if length_of_list == 0:
+        print("Список не может быть пустым")
+        continue
     list1 = []
     list2 = []
 
